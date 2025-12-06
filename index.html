@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="icons/css/all.min.css">
+   <link rel="stylesheet" href="icons/css/fontawesome.min.css">
+   <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+   <!-- Start of Main Section -->
+   <section class="weatherApp overlay">
+      <div class="loader-container flex-center">
+         <i class=" loader fa-solid fa-cloud"></i>
+      </div>
+      <div class="row g-0">
+         <div class="col-lg-9">
+            <div class="main_sec flex-col wrapper">
+               <div class="errorMsg">
+                  <p>Invalid City Name</p>
+                  <p>Please enter a valid city name.</p>
+               </div>
+               <div class="date-time">
+                  <span class="date">21 April 2023</span> <span class="time">11:00</span>
+               </div>
+               <div class="sub_sec">
+                  <div class="currentWeather">
+                     <h1>Cloudy</h1>
+                  </div>
+                  <div class="todaysForecast">
+                     <div class="row flex-nowrap flex-between overflow-auto g-2">
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">09:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard newDay">
+                              <p class="forecastCardTime">10:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">11:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">12:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">01:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">02:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">03:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">04:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">05:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">06:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">07:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="forecastCard">
+                              <p class="forecastCardTime">08:00</p>
+                              <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                              <p>12°C</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-3">
+            <aside class="sideBar wrapper flex-col">
+               <div class="cityInput">
+                  <input class="input" name="input" type="text" placeholder="Search City..." value="Cairo">
+                  <i class="searchBtn fa-solid fa-magnifying-glass"></i>
+               </div>
+               <div class="sideBar__degree">
+                  <h2 class="currentTemp">11°C</h2>
+                  <p><i class="fa-solid fa-wind"></i> <span class="subText windInfo">Northwest, 5.9 km/h</span></p>
+               </div>
+               <div class="sideBar__forecast flex-col">
+                  <h3>The Next Days Forecast</h3>
+                  <!-- <ul class="forecast__range flex-center">
+                     <li class="active">5 Days</li>
+                     <li>14 Days</li>
+                     <li>30 Days</li>
+                  </ul> -->
+                  <ul class="forecast__days flex-col gap-3">
+                     <li class="dailyForecastCard">
+                        <div class="day-icon">
+                           <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                           <div class="day__details">
+                              <p>Wednesday</p>
+                              <p class="subText">Cloudy</p>
+                           </div>
+                        </div>
+                        <div class="day__degree">
+                           <p>9°</p>
+                           <p>16°</p>
+                        </div>
+                     </li>
+                     <li class="dailyForecastCard">
+                        <div class="day-icon">
+                           <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                           <div class="day__details">
+                              <p>Wednesday</p>
+                              <p class="subText">Cloudy</p>
+                           </div>
+                        </div>
+                        <div class="day__degree">
+                           <p>9°</p>
+                           <p>16°</p>
+                        </div>
+                     </li>
+                     <li class="dailyForecastCard">
+                        <div class="day-icon">
+                           <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                           <div class="day__details">
+                              <p>Wednesday</p>
+                              <p class="subText">Cloudy</p>
+                           </div>
+                        </div>
+                        <div class="day__degree">
+                           <p>9°</p>
+                           <p>16°</p>
+                        </div>
+                     </li>
+                     <li class="dailyForecastCard">
+                        <div class="day-icon">
+                           <span class="weatherIcon flex-center"><i class="fa-solid fa-cloud"></i></span>
+                           <div class="day__details">
+                              <p>Wednesday</p>
+                              <p class="subText">Cloudy</p>
+                           </div>
+                        </div>
+                        <div class="day__degree">
+                           <p>9°</p>
+                           <p>16°</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </aside>
+         </div>
+      </div>
+   </section>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
