@@ -96,7 +96,7 @@ async function updateWeatherData(city) {
    windInfo.innerHTML = `${windDirection}, ${windSpeed} km/h`;
 
    currentWeather.innerHTML = `${main}`;
-   updateForecastData(main, city);
+   updateForecastData(city);
    switch (main) {
       case "Clouds":
          if (time.innerText.endsWith("PM"))
@@ -112,10 +112,10 @@ async function updateWeatherData(city) {
          break;
       default:
          if (time.innerText.endsWith("PM")) {
-            weatherBg.style.backgroundImage = 'url(imgs/clearNight.svg)';
+            weatherBg.style.backgroundImage = 'url(imgs/ClearNight.svg)';
          }
          else {
-            weatherBg.style.backgroundImage = 'url(imgs/clear.svg)';
+            weatherBg.style.backgroundImage = 'url(imgs/Clear.svg)';
          }
          break;
    }
@@ -124,14 +124,11 @@ async function updateWeatherData(city) {
 const forecastCard = document.querySelectorAll(".forecastCard");
 const dailyForecastCard = document.querySelectorAll(".dailyForecastCard");
 
-async function updateForecastData(weatherstatus, city) {
+async function updateForecastData(city) {
    const weatherData = await getFetchData("forecast", city);
    const {
       list
    } = weatherData;
-   console.log(list);
-   // let dateObj = new Date();
-   // let currentDate = dateObj.toISOString().split('T');
    let dailyIndex = 0;
    for (let i = 0; i < list.length; i++) {
       let forecastDate = list[i].dt_txt.split(" ");
