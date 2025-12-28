@@ -24,10 +24,10 @@ Check out the live version of the project here: [Weather App Live Demo](https://
 ```
 Weather-App/
 ├── index.html
-├── css/
-│ └── style.css
+├── style/
+│ └── main.css
 ├── js/
-│ └── script.js
+│ └── main.js
 ├── images/
 └── README.md
 ```
